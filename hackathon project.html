@@ -5,7 +5,7 @@
 
 /* BACKGROUND */
 body {
-    background-color: green;
+    background: linear-gradient(0deg, rgba(171, 127, 127, 0.32), rgba(171, 127, 127, 0.32)), url("background.png");
     height: 100%;
     background-size: cover;
     animation-iteration-count: infinite;
@@ -13,52 +13,275 @@ body {
 }
 
 .center {
-    margin-right: 403px;
-    margin-left: 550px;
-    padding-left: 76px;
-    padding-right: 17px;
-    margin-top: 60px;
-    color: whitesmoke;
+    border: 2px solid white;
+    background-color: white;
+    border-radius: 100px;
+    margin-right: 200px;
+    margin-left: 200px;
+    margin-top: 100px;
 }
+
+.center2 {
+    margin-right: 200px;
+    margin-left: 200px;
+    padding-left: 250px;
+    padding-right: 230px;
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 26px;
+}
+
 
 /* NAGIVATION BAR */
 .navbar {
     overflow: hidden;
-    background-color: rgb(171, 168, 168);
+    background-color: white;
+    height: 100px;
 }
 
 .navbar a {
-    float: left;
-    color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
-    font-size: 17px;
 }
 
-.navbar a:hover {
+
+.logo {
+    float: left;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.trackcheck {
+    float: left;
+    margin-left: 30px;
+    margin-top: 22px;
+    margin-bottom: 25px;
+    color: #D22C2C;
+    font-family: Arial;
+    font-weight: 400;
+    font-size: 50px;
+}
+
+.trackcheck:hover {
+    color: #ec5252;
+}
+
+/* CATEGORIES COLOURS AND FONTS IN NAVBAR */
+.center3 {
+    float: right;
+    font-family: Arial;
+    margin-top: 40px;
+    margin-right: 20px;
+}
+
+.center3 a {
+    padding: 14px 16px;
+}
+
+.center3 a:hover {
     background-color: rgba(128, 128, 128, 0.582);
     color: black;
+    border-radius: 100px;
 }
 
-.navbar a:active {
-    background-color: rgb(9, 166, 9);
+.center4 {
+    color: #B44F4F;
+}
+
+.signup {
+    float: 15%; 
+    background-color: #B44F4F;
+    border-width: 5px;
+    border-radius: 100px;
     color: white;
+    margin-top: 25px;
+    height: 20px;
+    width: px;
+}
+
+/* WHEN CLICK ON THE THING */
+.navbar a:active {
+    background-color: #B44F4F;
+    color: white;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* 'FROM STATION' DROPDOWN BUTTON */
+.dropdownbtn {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    margin-left: 150px;
+    margin-bottom: 20px;
+    margin-right: 5px;
+    border: 1px solid black;
+    border-radius: 100px;
+    padding-top: 10px;
+    padding-bottom: 35px;
+    padding-right: 2px;
+    width: 267px;
+    height: 45px;
+    font-family: Arial;
+    font-size: 24px;
+    float: left;
+}
+
+/* WHEN HOVER OVER THE DROPDOWN BUTTON */
+.dropdownbtn:hover {
+    background-color: #ec5252;
+    color: white;
+}
+
+/* THE STATIONS WILL BE DISPLAYED WHEN CLICK ON THE DROPDOWN BUTTON */
+.from-station {
+    background-color: white;
+    color: black;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 150px;
+    height: 100px;
+    display: none;
+    overflow: scroll;
+}
+
+.dropdown option:hover {
+    background-color: #ec5252;
+    color: white;
+}
+
+.display {
+    display: block;
+}
+
+.dropdown1 {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdownbtn1 {
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    margin-left: 250px;
+    margin-bottom: 20px;
+    margin-right: 5px;
+    border: 1px solid black;
+    border-radius: 100px;
+    padding-top: 10px;
+    padding-bottom: 35px;
+    width: 267px;
+    height: 45px;
+    font-family: Arial;
+    font-size: 24px;
+    float: right;
+}
+
+.to-station {
+    background-color: white;
+    color: black;
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 150px;
+    height: 100px;
+    display: none;
+    overflow: scroll;
+}
+
+.dropdownbtn1:hover {
+    background-color: #ec5252;
+    color: white;
+}
+
+.dropdown1 option:hover{
+    background-color: #ec5252;
+    color: white;
+}
+
+.show {
+    display: block;
+}
+
+.trackcheckbtn {
+    background-color: #B44F4F;
+    color: white;
+    font-family: Arial;
+    border: none;
+    border-radius: 100px;
+    margin-top: 20px;
+    margin-right: 300px;
+    margin-left: 620px;
+    width: 274px;
+    height: 60px;
+    font-size: 20px;
+}
+
+.trackcheckbtn:hover {
+    background-color: #d33c3c;
 }
 
 </style>
 
-<head></head>
+<head>
+    <script src="hackathon project.js"></script>
+</head>
 
+<body>
     <div class="navbar">
-        <a class="active" href="#home">Home</a>
-        <a href="#reachus">Reach us</a>
+        <div class="center3">
+            <a class="center4" href="trainsfeed">TrainsFeed</a>
+            <a class="center4" href="#weather">Weather</a>
+            <a class="center4" href="newsfeed">NewsFeed</a>
+            <a class="signup" href="signup">Sign Up</a>
+        </div>
+        <img class="logo" src="train_logo.png" width="62" height="58">
+        <a class="trackcheck" href="trainsfeed"><b>TrackCheck</b></a>
     </div>
 
     <div class="center">
-        <h1>OUR WEBSITE</h1>
+        <h2 class="center2">Where to today?</h2>
+
+        <div class="dropdown">
+            <button onclick="dropdownToggle()" class="dropdownbtn">From Station  &#9662</button> 
+            <div id="f-station" class="from-station">
+                <option id="Town Hall" value="Town Hall">Town Hall</option>
+                <option id="Erskineville" value="Erskineville">Erskineville</option>
+                <option id="Central" value="Central">Central</option>
+                <option id="Redfern" value="Redfern">Redfern</option>
+                <option id="Wynyard" value="Wynyard">Wynyard</option>
+                <option id="Circular Quay" value="Circular Quay">Circular Quay</option>
+                <option id="St James" value="St James">St James</option>
+                <option id="Marrickville" value="Marrickville">Marrickville</option>
+                <option id="Bondi Junction" value="Bondi Junction">Bondi Junction</option>
+            </div>
+        </div>
+
+        <div class="dropdown1">
+            <button onclick="dropdownToggle1()" class="dropdownbtn1">To Station  &#9662</button> 
+            <div id="t-station" class="to-station">
+                <option id="Town Hall" value="Town Hall">Town Hall</option>
+                <option id="Erskineville" value="Erskineville">Erskineville</option>
+                <option id="Central" value="Central">Central</option>
+                <option id="Redfern" value="Redfern">Redfern</option>
+                <option id="Wynyard" value="Wynyard">Wynyard</option>
+                <option id="Circular Quay" value="Circular Quay">Circular Quay</option>
+                <option id="St James" value="St James">St James</option>
+                <option id="Marrickville" value="Marrickville">Marrickville</option>
+                <option id="Bondi Junction" value="Bondi Junction">Bondi Junction</option>
+            </div>
+        </div>
+
     </div>
 
-</head>
+    <button class="trackcheckbtn">TrackCheck!</button>
+
+</body>
 
 </html>
