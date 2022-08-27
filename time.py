@@ -1,3 +1,4 @@
 import datetime
-now = datetime.datetime.now()
-print({now})
+while True:
+    now = datetime.datetime.now()
+    print(now)
