@@ -6,7 +6,7 @@ BASE_URL = "https://api.openweathermap.org/data/2.5/weather?"
 # City Name 
 CITY = "Hyderabad"
 # API key 
-API_KEY = ""
+API_KEY = "a4aebd2f559f59815f2f5717e38eb312"
 # upadting the URL
 URL = BASE_URL + "q=" + CITY + "&appid=" + API_KEY
 # HTTP request
