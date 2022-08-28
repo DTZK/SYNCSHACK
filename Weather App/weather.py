@@ -2,7 +2,7 @@ import requests
 from flask import Flask, render_template
 
 def get_weather_results():
-    api_url = "https://api.openweathermap.org/data/2.5/weather?q=Sydney,AU&units=metric&appid=a4aebd2f559f59815f2f5717e38eb312"
+    api_url = "https://api.openweathermap.org/data/2.5/weather?q=Sydney,AU&units=metric&appid=cc12378b53967e7eaf902e1566c6e11b"
     r = requests.get(api_url)
     return r.json()
 
